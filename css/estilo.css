@@ -1,0 +1,120 @@
+.nosotros{
+text-align: center;
+background-color: #777;
+color: white;
+font-size: 2rem;
+}
+.carshop{
+	font-size: 2rem;
+}
+.txt{
+	border-radius: 0.5em;
+	width: 100%;
+
+}
+.labe{
+margin-left: 4%;
+}
+.formulario{
+	margin-right: 30%;
+}
+.row{
+	margin-left: 7%;
+}
+
+.formula{
+	margin-left: 30%;
+	width: 40%;
+	float: left;
+	clear: both;
+}
+textarea{
+	width: 100%;
+
+}
+.danger{
+	margin-right: 3%;
+	text-align: center;
+	width: 100px;
+	background-color: #d9534f;
+	color: #fff;
+}
+.mini{
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	background-color: pink;
+	height: auto;
+	width: 78%;
+
+}
+.interna{
+	margin-left: 2%;
+	margin-right: 2%;
+	height: 100%;
+	width: 98%;
+}
+.img{
+	width: 95%;
+	height: 95%;
+	max-width: 500px;
+	max-height: 300px;
+	
+	
+}
+.des{
+	margin-right: 8%;
+	width: 100%;
+	height: 40%;
+	border: 5px;
+	text-align: center;
+	font-size: 2rem;
+
+}
+.precio{
+	text-align: right;
+	margin-right: 5%;
+	font-size: 2rem;
+}
+.info{
+	text-align: center;
+	background-color: #777;
+	font-size: 2rem;
+	color: white;
+	margin:5%;
+}
+.regreso{
+	text-align: left;
+
+}
+.sucursales{
+	width: 40%;
+	height: 250px;
+	float: left;
+	margin-left: 8%;
+}
+.limpieza{
+	clear: both;
+}
+.imagen{
+
+	width: 140px; 
+	height: 140px;
+}
+.ingresocarro{
+	float: left;
+	width: 20%;
+	margin-left: 5%;
+	max-width: 50px;
+}
+.btn{
+	float: left;
+	width: 10%;
+	margin-left: 2%;
+	max-width: 50px;
+}
+.mensaje{
+	text-align: center;
+	
+}
