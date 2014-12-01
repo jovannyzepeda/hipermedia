@@ -16,14 +16,14 @@
         'Reply-To: '.$_POST['email']."\r\n" .
         'X-Mailer: PHP/' . phpversion();
 
-
+        $ip = $_SERVER['REMOTE_ADDR'];
         $con=mysqli_connect("localhost","root","cruel1293","pasteleria");
           if (mysqli_connect_errno()) {
           echo "Failed to connect to MySQL: " . mysqli_connect_error();
           }
         $nombre=$_POST['nombre'];
         $direccion=$_POST['direccion'];
-        $result = mysqli_query($con,"SELECT SUM(totalproducto) FROM auxiliar");
+        $result = mysqli_query($con,"SELECT SUM(totalproducto) FROM auxiliar where ip = '$ip' ");
         while($row = mysqli_fetch_array($result)){
         $total= $row['SUM(totalproducto)'];
         }
@@ -44,7 +44,7 @@
         VALUES ($cantidad,$idproducto,$id)";
         mysqli_query($con,$sql);
         }
-        mysqli_query($con,"DELETE FROM auxiliar");
+        mysqli_query($con,"DELETE FROM auxiliar where ip = '$ip'");
         mysqli_close($con);
         @mail($to, $subject, $message, $headers);
         }else echo "erro";

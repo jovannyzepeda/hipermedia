@@ -74,7 +74,7 @@
           <p>borrar</p>
           </div>
           <div class="col-md-1">
-          <a href="carrito.php"><button type="button" class="danger" id="<?php echo $row['idproducto']?>"onclick="eliminar(this.id)"><span class="glyphicon glyphicon-ban-circle"></span></button></a>
+          <button type="button" class="danger" id="<?php echo $row['idproducto']?>"onclick="eliminar(this.id)"><span class="glyphicon glyphicon-ban-circle"></span></button>
           </div>
           </div>
           <br>
@@ -111,7 +111,7 @@
     <div class="col-md-3">
     <input type="telefono" required="required" placeholder="36 88 88 00" id="tel" name ="telefono"/>
     </div>
-    <input type="submit" value="Realizar pedido"/>
+
 
    <br>
    <br>
@@ -126,6 +126,7 @@
    <div class="col-md-3">
    <input type="email" required="required" placeholder="direccion de entrega" id="direccion" name ="email"/>
    </div>
+   <input type="submit" value="Realizar pedido"/>
     </form>
     
     </section>
@@ -161,7 +162,11 @@
       $.ajax({
         url: 'actualizarcarrito.php',
         type: 'POST',
-        data: info
+        data: info,
+        success: function(){
+                        
+                        location.reload();
+                        }
       });
     }
     </script>

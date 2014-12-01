@@ -4,9 +4,55 @@ background-color: #777;
 color: white;
 font-size: 2rem;
 }
+
+.featurette-divider{
+	clear: both;
+}
+  .union{
+	clear: both;
+	margin-bottom: 25%;
+}
+ video.video{
+	float: left;
+	width: 90%;
+	max-height: 30%;
+	margin-left: 5%;
+}
+@media(min-width: 500px){
+  .formula,.formulario{
+	
+	margin-left: 30%;
+}
 .carshop{
 	font-size: 2rem;
 }
+
+}
+@media(max-width: 500px){
+input[type="submit"] {
+margin-left: 5%;
+}
+}
+@media(min-width: 1200px){
+  .union{
+	clear: both;
+	margin-bottom: 25%;
+}
+.nosotros{
+text-align: center;
+background-color: #777;
+color: white;
+font-size: 2rem;
+float: right;
+width: 40%;
+}
+ video.video{
+	float: left;
+	width: 50%;
+	max-height: 30%;
+}
+}
+
 .txt{
 	border-radius: 0.5em;
 	width: 100%;
@@ -15,15 +61,13 @@ font-size: 2rem;
 .labe{
 margin-left: 4%;
 }
-.formulario{
-	margin-right: 30%;
-}
+
 .row{
 	margin-left: 7%;
 }
 
 .formula{
-	margin-left: 30%;
+	
 	width: 40%;
 	float: left;
 	clear: both;
